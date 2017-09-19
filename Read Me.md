@@ -2,7 +2,9 @@
 
 ## Purpose
 
-There is one course which require us to do research on the method and theory of some specific period of time. And we need to read all of the papers issued on the top journals in the target period. After briefly browsing, I found that I need to read about 100 papers which seems to be impossible to be done in just two weeks. Then I would like to know the current citation numbers of these bunch of papers, which can make it easier to choose which one is more worth to read. Then I did some work on MATLAB.
+There is one course which requires us to do research on the methods and theories of some specific period of time. And we need to read all of the papers issued on the top journals in the target period. After briefly browsing, I found that I need to read about 100 papers which is frankly impossible to be done in just two weeks. 
+
+Then I just want to know the `current citation numbers` of this bunch of papers, which can make it easier to decide which one is more worth to read at first. Then I did some work on MATLAB and hope it can help you.
 
 ## Basic info
 
@@ -26,9 +28,10 @@ There is one course which require us to do research on the method and theory of 
 1. Make a new folder named `PDF files` and move the PDF files that you want to search for their academic catations in this folder.
 2. Make sure that your network is open;
 3. This `google_citation.m` can only recognize 3 journals paper:
-* Management Information System Quarterly
-* INFORMS Journal of Computing
-* Information System Research
+
+- [X] Management Information System Quarterly
+- [X] INFORMS Journal of Computing
+- [ ] Information System Research
 
 ## Usage：
 
