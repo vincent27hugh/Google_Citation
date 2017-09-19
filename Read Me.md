@@ -1,4 +1,4 @@
-# Read me about Google_citation.m 
+# Read me about Google_Citation.m 
 
 ## Purpose
 
@@ -32,7 +32,7 @@ There is one course which require us to do research on the method and theory of 
 
 ## Usage：
 
-1. Run main.m file and you will get:
+1. Run `Google_Citation.m` file and you will get:
 
 * `citation.mat` data file which stores the title and ciataion # of the 
 * `Ciatation` folder which stores the renamed PDF files in the format as `Citation #-Old name.pdf`;
