@@ -75,7 +75,7 @@ for nf = 1:length(pdf_file)
     C{nf,2}=citation;
     % Rename PDF files
     copyfile(strcat(work_path,pdf_file(nf).name),...
-        sprintf(strcat(new_path,'%s-',pdf_file(nf).name,'.pdf'), citation));
+        sprintf(strcat(new_path,'%s-',pdf_file(nf).name), citation));
 end
 %% =================== Open a file to save data ===============================
 
