@@ -52,9 +52,11 @@ for nf = 1:length(pdf_file)
         %
         temp2 = strsplit(temp1{2},'INFORMS');
         %
-        temp3 = strsplit(temp2{1},'(2007)');
+        temp3 = strsplit(temp2{1},'(');
+        %
+        temp4 = strsplit(temp3{2},')');
         % temporary title 
-        t_title = temp3{2};
+        t_title = temp4{2};
     end
     %% =================== Get Citation # from Google Scholar ===========
     % cut the blank in the tail and trail
