@@ -13,8 +13,10 @@
 %
 %%
 clear; close all;
-%
+% The name of journal
 mgz = 'ijoc';
+% mgz ='misq';
+% mgz = 'isr';
 %% ==================Set Working Directory ==================
 % Get current folder
 path0 = pwd;
@@ -52,9 +54,9 @@ for nf = 1:length(pdf_file)
         %
         temp2 = strsplit(temp1{2},'INFORMS');
         %
-        temp3 = strsplit(temp2{1},'(');
+        temp3 = strsplit(temp2{1},',  (');
         %
-        temp4 = strsplit(temp3{2},')');
+        temp4 = strsplit(temp3{2},') ');
         % temporary title 
         t_title = temp4{2};
     end
