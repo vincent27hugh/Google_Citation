@@ -14,9 +14,9 @@
 %%
 clear; close all;
 % The name of journal
-mgz = 'ijoc';
-% mgz ='misq';
-% mgz = 'isr';
+%mgz = 'ijoc';
+%mgz ='misq';
+mgz = 'isre';
 %% ==================Set Working Directory ==================
 % Get current folder
 path0 = pwd;
@@ -59,6 +59,18 @@ for nf = 1:length(pdf_file)
         temp4 = strsplit(temp3{2},') ');
         % temporary title 
         t_title = temp4{2};
+    elseif strcmp(mgz,'isre')
+        % For ISRE, delimite is 'To cite this article:'
+        temp1 = strsplit(p{1},'To cite this article:');
+        %
+        temp2 = strsplit(temp1{2},'. Information');
+        %
+        temp3 = strsplit(temp2{1},',  (');
+        %
+        temp4 = strsplit(temp3{2},') ');
+        % temporary title 
+        t_title = temp4{2};
+        
     end
     %% =================== Get Citation # from Google Scholar ===========
     % cut the blank in the tail and trail
